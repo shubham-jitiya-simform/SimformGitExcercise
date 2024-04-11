@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_fragment_padding">16dp</dimen>
+    <dimen name="button_login_margin_top">16dp</dimen>
+    <dimen name="forgot_password_margin_top">8dp</dimen>
+
+    <!--Register screen-->
+    <dimen name="create_account_padding">16dp</dimen>
+    <dimen name="text_view_create_account_margin_top">8dp</dimen>
+    <dimen name="create_account_title">24sp</dimen>
+    <dimen name="input_layout_username_margin_top">16dp</dimen>
+    <dimen name="button_create_account_margin_top">16dp</dimen>
+
+    <!--Forgot password screen-->
+    <dimen name="input_layout_email_margin_top">16dp</dimen>
+    <dimen name="text_view_forgot_password_margin_top">8dp</dimen>
+    <dimen name="button_reset_password_margin_top">16dp</dimen>
+</resources>

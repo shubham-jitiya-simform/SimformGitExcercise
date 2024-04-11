@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/login_fragment_padding"
+    tools:context=".view.authentication.LoginFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textViewTitleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/welcome_back"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/outlinedTextFieldUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextFieldUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/username"
+        app:expandedHintEnabled="true"
+        app:layout_constraintEnd_toEndOf="@id/textViewTitleLogin"
+        app:layout_constraintStart_toStartOf="@id/textViewTitleLogin"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitleLogin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextFieldPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/password"
+        app:expandedHintEnabled="true"
+        app:layout_constraintEnd_toEndOf="@id/outlinedTextFieldUsername"
+        app:layout_constraintStart_toStartOf="@id/outlinedTextFieldUsername"
+        app:layout_constraintTop_toBottomOf="@id/outlinedTextFieldUsername"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_login_margin_top"
+        android:backgroundTint="@color/button_login"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/login"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@id/outlinedTextFieldPassword"
+        app:layout_constraintStart_toStartOf="@id/outlinedTextFieldPassword"
+        app:layout_constraintTop_toBottomOf="@id/outlinedTextFieldPassword" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/textViewForgetPassword"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/forgot_password_margin_top"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/forgot_password"
+        app:layout_constraintEnd_toEndOf="@id/buttonLogin"
+        app:layout_constraintStart_toStartOf="@id/buttonLogin"
+        app:layout_constraintTop_toBottomOf="@id/buttonLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

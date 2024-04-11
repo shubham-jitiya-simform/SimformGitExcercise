@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">GitExcercise</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="forgot_password">Forgot password?</string>
+
+    <!--Register screen-->
+    <string name="create_account">Create account</string>
+    <string name="enter_your_user_name">Enter your user name</string>
+    <string name="enter_your_password">Enter your password</string>
+
+    <!--Forgot password screen-->
+    <string name="reset_password">Reset password</string>
+    <string name="email">Email</string>
+    <string name="enter_your_email">Enter your email</string>
 </resources>
